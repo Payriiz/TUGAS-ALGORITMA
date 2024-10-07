@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class TELUR {
-    public static void main(String[] args) throws Exception {
-        Double jumlah,uangDibayar,totalHarga,kembalian,diskon,subtotal;
+public class TELURLAMA {
+    public static void main(String[] args) {
+                Double jumlah,uangDibayar,totalHarga,kembalian;
         Double harga = (double) 28000;
-        diskon = 0.1;
     
         Scanner keyboard = new Scanner(System.in);
     
@@ -12,19 +11,14 @@ public class TELUR {
         jumlah = keyboard.nextDouble();
         System.out.print("Uang yang dibayarkan: ");
         uangDibayar = keyboard.nextDouble();
-        
+    
         totalHarga = jumlah*harga;
-        if (jumlah > 3)
-            diskon = totalHarga * diskon;
-        subtotal = totalHarga - diskon;
-        kembalian = uangDibayar - subtotal;
-        
+        kembalian = uangDibayar-totalHarga;
+    
         System.out.println("Total kilo yang dibeli :"+jumlah);
         System.out.println("Uang yang dibayarkan: "+uangDibayar);
-        System.out.println("Harga keseluruhan: "+subtotal);
+        System.out.println("Harga keseluruhan: "+totalHarga);
         System.out.println("Kembaliannya: "+kembalian);
-        System.out.println("Diskonnya: "+diskon);
-        
 
         keyboard.close();
     }
