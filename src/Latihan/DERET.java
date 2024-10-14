@@ -80,16 +80,20 @@ public class DERET {
             // }
             // i++;
 
-            for (int a = 1; a <= 3; a++) {
-                for (int b = 1; b <= 5; b++) {
-                    System.out.print(a + " ");
-                }
-                System.out.println();
+            // for (int b = 1; b <= 3; b++) {
+            //     for (int a = 1; a <= 6; a++) {
+            //         System.out.print(a + " ");
+            //     }
+            //     System.out.println();
+                
+            // }
+
+
                 
             }
 
                 
 
-        }
-}
+ }
+
 
