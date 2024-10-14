@@ -1,4 +1,4 @@
-package Sesi_4;
+package Latihan;
 public class DERET {
     /**
      * @param args
