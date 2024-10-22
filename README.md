@@ -27,6 +27,10 @@
 4. Loop
 5. Loopingwhile
 
+## Minggu Ke-Lima
+1. Array
+2. Array Lulus Mahasiswa
+
 ## Latihan
 1. Total Bayar
 2. Kembalian telur dengan diskon
