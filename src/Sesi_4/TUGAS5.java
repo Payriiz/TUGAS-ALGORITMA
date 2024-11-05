@@ -2,8 +2,8 @@ package Sesi_4;
 
 public class TUGAS5 {
     public static void main(String[] args) {
-        int a=1;
-        do  {
+        int a = 1;
+        do {
             for (int b = 0; b < 6 - a; b++) {
                 System.out.print("* ");
             }
@@ -12,8 +12,7 @@ public class TUGAS5 {
             }
             System.out.println();
             a++;
-        }while (a<=6);
-            
-        
-}
+        } while (a <= 6);
+
+    }
 }
