@@ -1,40 +1,39 @@
 package Sesi_11;
 
 public class EXPONENTIAL {
-     // Fungsi untuk melakukan pencarian biner
+     
      public static int binarySearch(int[] arr, int left, int right, int key) {
         while (left <= right) {
-            int mid = left + (right - left) / 2; // Hitung indeks tengah
+            int mid = left + (right - left) / 2; 
             if (arr[mid] == key) {
-                return mid; // Kunci ditemukan
+                return mid; 
             } else if (arr[mid] < key) {
-                left = mid + 1; // Cari di sebelah kanan
+                left = mid + 1; 
             } else {
-                right = mid - 1; // Cari di sebelah kiri
+                right = mid - 1; 
             }
         }
-        return -1; // Kunci tidak ditemukan
+        return -1; 
     }
 
-    // Fungsi untuk melakukan pencarian eksponensial
+    
     public static int exponentialSearch(int[] arr, int n, int key) {
         if (arr[0] == key) {
-            return 0; // Jika elemen pertama adalah kunci
+            return 0; 
         }
 
         int i = 1;
-        // Mencari rentang yang mengandung kunci
         while (i < n && arr[i] <= key) {
-            i *= 2; // Meningkatkan indeks secara eksponensial
+            i *= 2;
         }
 
-        // Melakukan pencarian biner dalam rentang yang ditemukan
+        
         return binarySearch(arr, i / 2, Math.min(i, n - 1), key);
     }
 
     public static void main(String[] args) {
-        int[] arr = {6, 11, 19, 24, 33, 54, 67, 81, 94, 99}; // Array terurut
-        int key = 67; // Elemen yang dicari
+        int[] arr = {9, 16, 40, 57, 79, 84, 89, 92, 94, 99, 101, 104, 200, 999}; 
+        int key = 55; 
         int result = exponentialSearch(arr, arr.length, key);
 
         if (result != -1) {
