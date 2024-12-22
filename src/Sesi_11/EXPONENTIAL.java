@@ -33,7 +33,7 @@ public class EXPONENTIAL {
 
     public static void main(String[] args) {
         int[] arr = {9, 16, 40, 57, 79, 84, 89, 92, 94, 99, 101, 104, 200, 999}; 
-        int key = 55; 
+        int key = 79; 
         int result = exponentialSearch(arr, arr.length, key);
 
         if (result != -1) {
