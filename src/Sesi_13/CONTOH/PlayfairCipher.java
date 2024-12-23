@@ -1,4 +1,4 @@
-package Sesi_13;
+package Sesi_13.CONTOH;
 
 import java.util.Scanner;
 
